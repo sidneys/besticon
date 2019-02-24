@@ -14,9 +14,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mat/besticon/besticon"
-	"github.com/mat/besticon/besticon/iconserver/assets"
-	"github.com/mat/besticon/lettericon"
+	"github.com/sidneys/besticon/besticon"
+	"github.com/sidneys/besticon/besticon/iconserver/assets"
+	"github.com/sidneys/besticon/lettericon"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
@@ -300,7 +300,7 @@ func registerHandler(path string, f http.HandlerFunc) {
 }
 
 func main() {
-	fmt.Printf("iconserver %s (%s) (%s) - https://github.com/mat/besticon\n", besticon.VersionString, besticon.BuildDate, runtime.Version())
+	fmt.Printf("iconserver %s (%s) (%s) - https://github.com/sidneys/besticon\n", besticon.VersionString, besticon.BuildDate, runtime.Version())
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"

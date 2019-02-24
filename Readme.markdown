@@ -9,8 +9,8 @@ This is a favicon service:
 
 Try out the demo at <https://besticon-demo.herokuapp.com> or find out how to [deploy your own version](#hosting) right now.
 
-[![Build Status](https://travis-ci.org/mat/besticon.svg?branch=master)](https://travis-ci.org/mat/besticon)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mat/besticon)](https://goreportcard.com/report/github.com/mat/besticon)
+[![Build Status](https://travis-ci.org/sidneys/besticon.svg?branch=master)](https://travis-ci.org/sidneys/besticon)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sidneys/besticon)](https://goreportcard.com/report/github.com/sidneys/besticon)
 [![Donate at PayPal](https://img.shields.io/badge/paypal-donate-orange.svg?style=flat)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6F9YBSSCM6KCW "Donate once-off to this project using Paypal")
 
 
@@ -64,9 +64,9 @@ formats   | png,ico         | Comma-separated list of accepted image formats: pn
 
 I tried hard to make this useful but please note there are some known limitations:
 
-- Poor i18n support for letter icons ([#13](https://github.com/mat/besticon/issues/13))
+- Poor i18n support for letter icons ([#13](https://github.com/sidneys/besticon/issues/13))
 
-Feel free to file other bugs - and offer your help - at <https://github.com/mat/besticon/issues>.
+Feel free to file other bugs - and offer your help - at <https://github.com/sidneys/besticon/issues>.
 
 ## Hosting
 
@@ -74,29 +74,29 @@ An easy way to host this service is to use Heroku, just go to <https://heroku.co
 
 ## Docker
 
-A docker image is available at <https://hub.docker.com/r/matthiasluedtke/iconserver/>, generated from the [Dockerfile](https://github.com/mat/besticon/blob/master/Dockerfile) in this repo. I try to keep it updated for every release.
+A docker image is available at <https://hub.docker.com/r/matthiasluedtke/iconserver/>, generated from the [Dockerfile](https://github.com/sidneys/besticon/blob/master/Dockerfile) in this repo. I try to keep it updated for every release.
 
 Note that this docker image is not used to run <https://besticon-demo.herokuapp.com> and therefore not well tested.
 
 ## Monitoring
 
-[Prometheus](https://prometheus.io) metrics are exposed under [/metrics](https://besticon-demo.herokuapp.com/metrics). A Grafana dashboard config based on these metrics can be found in [grafana-dashboard.json](https://github.com/mat/besticon/blob/master/grafana-dashboard.json).
+[Prometheus](https://prometheus.io) metrics are exposed under [/metrics](https://besticon-demo.herokuapp.com/metrics). A Grafana dashboard config based on these metrics can be found in [grafana-dashboard.json](https://github.com/sidneys/besticon/blob/master/grafana-dashboard.json).
 
 ## Server Executable
 
 ### Download binaries
 
-Binaries for some operating systems can be downloaded from <https://github.com/mat/besticon/releases/latest>
+Binaries for some operating systems can be downloaded from <https://github.com/sidneys/besticon/releases/latest>
 
 ### Build your own
 
 If you have Go 1.11 installed on your system you can use `go get` to fetch the source code and build the server:
 
-	$ go get -u github.com/mat/besticon/...
+	$ go get -u github.com/sidneys/besticon/...
 
 If you want to build executables for a different target operating system you can add the `GOOS` and `GOARCH` environment variables:
 
-	$ GOOS=linux GOARCH=amd64 go get -u github.com/mat/besticon/...
+	$ GOOS=linux GOARCH=amd64 go get -u github.com/sidneys/besticon/...
 
 ### Running
 
@@ -109,7 +109,7 @@ To use a different port use
 	$ PORT=80 iconserver
 
 Now when you open <http://localhost:8080/icons?url=instagram.com> you should see something like
-![Screenshot of The Favicon Finder](https://github.com/mat/besticon/raw/master/the-icon-finder.png)
+![Screenshot of The Favicon Finder](https://github.com/sidneys/besticon/raw/master/the-icon-finder.png)
 
 
 ## Configuration
