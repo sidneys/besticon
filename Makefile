@@ -30,7 +30,7 @@ install:
 
 run_server:
 	go build -o bin/iconserver github.com/sidneys/besticon/besticon/iconserver
-	PORT=3000 DEPLOYED_AT=`date +%s` HOST_ONLY_DOMAINS=* POPULAR_SITES=bing.com,github.com,instagram.com,reddit.com ./bin/iconserver
+	PORT=3000 DEPLOYED_AT=`date +%s` HOST_ONLY_DOMAINS=* POPULAR_SITES=bing.com,github.com,instagram.com,reddit.com,ifttt.com,ebay-kleinanzeigen.de ./bin/iconserver
 
 coverage_besticon:
 	go test -coverprofile=coverage.out -covermode=count github.com/sidneys/besticon/besticon && go tool cover -html=coverage.out && unlink coverage.out
