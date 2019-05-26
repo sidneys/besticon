@@ -7,9 +7,9 @@
 	"env": {
 		"CACHE_SIZE_MB": "128",
 		"HOST_ONLY_DOMAINS": "*",
-		"HTTP_CLIENT_TIMEOUT": "5s",
+		"HTTP_CLIENT_TIMEOUT": "10s",
 		"HTTP_MAX_AGE_DURATION": "720h",
-		"POPULAR_SITES": "bing.com,github.com,instagram.com,reddit.com,ifttt.com"
+		"POPULAR_SITES": "bing.com,github.com,instagram.com,reddit.com,ifttt.com,ebay-kleinanzeigen.de"
 	},
 	"buildpacks": [
 		{
