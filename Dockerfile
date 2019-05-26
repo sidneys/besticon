@@ -12,8 +12,8 @@ EXPOSE 8080
 ENV PORT=8080
 
 ENV HOST_ONLY_DOMAINS=*
-ENV POPULAR_SITES=bing.com,github.com,instagram.com,reddit.com
-ENV HTTP_CLIENT_TIMEOUT=5s
+ENV POPULAR_SITES=bing.com,github.com,instagram.com,reddit.com,ifttt.com,ebay-kleinanzeigen.de
+ENV HTTP_CLIENT_TIMEOUT=10s
 ENV HTTP_MAX_AGE_DURATION=720h
 
 WORKDIR /var/www
